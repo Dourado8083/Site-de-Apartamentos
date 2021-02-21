@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+/*Div gerais */
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*para limpar kk*/
+.clear{
+	clear: both;
+}
+header{
+	background-color: #D6D6D6;
+	padding: 10px 2% 10px 2%;
+}
+.logo1{
+	float: left;
+	width: 120px;
+	height: 150px;
+	background-size: 100% auto; /*ouve correção esta e 100% 100%,a imagem estava quebrada */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../imagem/logo.png');
+	/*background-color: purple;*/
+}
+/*.logo2{
+	float: right;
+	width: 160px; 
+	height: 150px;
+	background-image: url('../imagem/download.png');
+	background-size: 100% auto; /*ouve correção esta e 100% 100%,a imagem estava quebrada 
+	background-position: center;
+	background-repeat: no-repeat;*/
+	section.cover-form{
+		width: 100%;
+		padding: 0 2%;
+	}
+	.bg{
+		height: 500px;
+		background-size: cover;
+		background-position: center;
+		background-image: url('../imagem/bg-form.jpg');
+	}
+	.form-container{
+		float: right;
+		margin-right: 40px;
+		width: 400px;
+		height: 110%;
+		position: relative;
+		top:-5%;
+		background-color:white;
+	}
+	.form-container h2{
+		padding:  20px 15px;
+		font-weight: normal;
+		color: black;
+		background-color: rgb(234,236,239,0.7);
+		font-size: 18px;
+	}
+	.form-container form{
+		margin-top:8px; 
+		padding: 20px;
+	}
+	.form-contaner form p{
+		font-size: 14px;
+		color: #525252;
+	}
+	.form-wraper:not(:first-child){
+		margin-top:30px; 
+	}
+	.form-wraper:last-child{
+		margin-top: 20px;
+	}
+	.form-container form input[type=text]{
+		width: 100%;
+		border: 1px solid #ccc;
+		height: 45px;
+		line-height: 45px;
+		padding-left: 10px;
+	}
+	.form-container form input[type=submit]{
+		background-color: #033C50;
+		text-transform: uppercase;
+		color: white;
+		width: 100%;
+		font-size: 25px;
+		height: 60px;
+		cursor: pointer;
+		border: 0;
+
+	}
+@media screen and(max-width: 510px){
+     header{
+     	text-align: center;
+     }	
+
+	[class^='logo']{ /*aqui está dizendo que tudo que começe com logo aplique esse estilo */
+		margin-top: 10px;
+		display: inline-block;
+		float: none;
+	}
+}
