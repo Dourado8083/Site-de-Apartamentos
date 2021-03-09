@@ -118,6 +118,53 @@ header{
 		font-size: 18px;
 		font-weight: normal;
 	}
+	.flex-mosaico{
+		display: flex;
+	}
+	.item-1-mosaico{
+		background-position: cover;
+		background-position: center;
+		width: 60%;
+	
+	}
+	.item-2-mosaico{
+		background-color: #146af5;
+		padding:60px 40px;
+		width: 40%;
+	}
+	.item-2-mosaico p{
+	 /*podiar colocar no item 2 color white que daria certo */
+	 color: white;
+	}
+	footer{
+		text-align: center;
+		padding: 30px 0;
+		background-color: gray;
+	}
+	footer p {
+
+		margin-top: 8px;
+	}
+	footer img{
+		width: 30px;
+	}
+	@media screen and(max-width: 768px){
+	 .flex-mosaico{
+	 	display: block;
+
+	 }	
+      
+		.item-1-mosaico{
+			/*para aparecer a imagem definido manualmenteheight: 400px;porque o fluxo da ordem não importa,ele pode colocar a ordem que quiser,pois tem o display flex*/
+			width: 100%;
+			padding-top: 80%; /*se torna resposivo por completo */
+		}
+     		.item-2-mosaico{
+			width: 100%;
+			text-align: justify;
+		}
+
+	}
 	@media screen and (max-width: 960px){
 		.bg{
 			height:auto;
